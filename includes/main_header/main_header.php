@@ -1,4 +1,4 @@
-<?php
+<?php 
 // session_start();
 if(empty($_SESSION['auth']['Matricule']) || empty($_SESSION['auth']['password']) ):
     header('location:auth-login.php');
@@ -42,4 +42,3 @@ else:
 
 
 endif;
-
