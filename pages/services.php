@@ -106,7 +106,7 @@
                             <div class="content">
                                 <i class="flaticon-consultant"></i>
                                 <?php /*<span><a href="service-details">IT Solution</a></span>*/?>
-                                <h3><a href="service-details"><?php echo $value->nom ?></a></h3>
+                                <h3><a href="service-details/<?= $value -> matricule_service ?>"><?php echo $value->nom ?></a></h3>
                             </div>
                         </div>
                     </div>

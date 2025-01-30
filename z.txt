@@ -4,3 +4,7 @@ services
 formation
 blog
 contact
+- Taf 30/01/2025
+- Detail services
+- Detail blog
+

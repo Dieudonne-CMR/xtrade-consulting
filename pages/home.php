@@ -1,3 +1,21 @@
+<?php 
+//--- affiche les bannieres aleatoirement
+$i=random_int(1,3);
+if($i==1):
+    $titre_banniere = $titre_banniere1;
+    $description_baniere =$description_baniere1;
+    $banniere= $banniere1;
+elseif($i==2):
+    $titre_banniere = $titre_banniere2;
+    $description_baniere =$description_baniere2;
+    $banniere= $banniere2;
+else:
+    $titre_banniere = $titre_banniere3;
+    $description_baniere = $description_baniere3;
+    $banniere= $banniere3;
+endif;
+//--- fin d'affiche les bannieres aleatoirement
+?>
 <!DOCTYPE html>
 <html lang="zxx">
     
@@ -33,7 +51,7 @@
         <link rel="stylesheet" href="assets/css/theme-dark.css">
 
         <!--=== Title & Favicon ===-->
-        <title>Techex - Technology & IT Services HTML Template</title>
+        <title><?= $nom_entreprise ?></title>
         <link rel="icon" type="image/png" href="assets/images/favicon.png">
     </head>
     <body>
@@ -68,6 +86,7 @@
         </div>
         <!-- End Search Overlay -->
 
+
         <!-- Banner Area Two -->
         <div class="banner-area-two">
             <div class="container-fluid">
@@ -75,20 +94,20 @@
                     <div class="row align-items-center">
                         <div class="col-lg-5">
                             <div class="banner-content">
-                                <h1>Digital IT Service With Excellent Quality</h1>
+                                <h1><?= $titre_banniere ?></h1>
                                 <p>
-                                    Aenean Sollicitudin, Lorem quis Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet 
+                                    <?php $description_baniere ?>
                                 </p>
                                 <div class="banner-btn">
-                                    <a href="about.html" class="default-btn btn-bg-two border-radius-50">Learn More <i class='bx bx-chevron-right'></i></a>
-                                    <a href="contact.html" class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote <i class='bx bx-chevron-right'></i></a>
+                                    <a href="about" class="default-btn btn-bg-two border-radius-50">Lire plus <i class='bx bx-chevron-right'></i></a>
+                                    <a href="contact" class="default-btn btn-bg-one border-radius-50 ml-20">Get A Quote <i class='bx bx-chevron-right'></i></a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="col-lg-7">
                             <div class="banner-img">
-                                <img src="assets/images/home-three/home-three-img.png" alt="Images">
+                                <img src="<?= affichage_img ($image_banniere, $banniere )?>" alt="Images" style="border-radius: 10px;">
                                 <div class="banner-img-shape">
                                     <img src="assets/images/home-three/home-three-shape.png" alt="Images">
                                 </div>
@@ -103,24 +122,24 @@
                     <div class="banner-sub-item">
                         <img src="assets/images/home-three/home-three-sub1.jpg" alt="Images">
                         <div class="content">
-                            <h3>3.7k</h3>
-                            <span>Satisfied Clients</span>
+                            <h3><?= $mention1?></h3>
+                            <span><?= $mention_titre1 ?></span>
                         </div>
                     </div>
 
                     <div class="banner-sub-item">
                         <img src="assets/images/home-three/home-three-sub2.jpg" alt="Images">
                         <div class="content">
-                            <h3>45+</h3>
-                            <span>Country Worldwide</span>
+                            <h3><?= $mention2?></h3>
+                            <span><?= $mention_titre2 ?></span>
                         </div>
                     </div>
 
                     <div class="banner-sub-item">
                         <img src="assets/images/home-three/home-three-sub3.jpg" alt="Images">
                         <div class="content">
-                            <h3>6.5+</h3>
-                            <span>Project Completed</span>
+                            <h3><?= $mention3?></h3>
+                            <span><?= $mention_titre3 ?></span>
                         </div>
                     </div>
                 </div>
@@ -134,7 +153,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-img-2">
-                            <img src="assets/images/about/about-img3.jpg" alt="About Images">
+                            <img src="<?= affichage_img( $image_banniere , $image_about)  ?>" alt="About Images">
                         </div>
                     </div>
 
@@ -142,12 +161,14 @@
                         <div class="about-content-2 ml-20">
                             <div class="section-title">
                                 <span class="sp-color1">About Us</span>
-                                <h2>Right Partner for Software Innovation</h2>
+                                <?php /*<h2>Right Partner for Software Innovation</h2>
                                 <p>
                                     Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
                                     Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum auctor a ornare odio. 
-                                </p>
+                                </p> */?>
+                                <?= $apropos_de_lentreprise ?>
                             </div>
+                            <?php /*
                             <div class="row">
                                 <div class="col-lg-6 col-6">
                                     <div class="about-card">
@@ -168,7 +189,7 @@
                                         <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */?>
                         </div>
                     </div>
                 </div>
@@ -240,7 +261,7 @@
         <section class="services-area-three pt-100 pb-70">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="sp-color2">Nos Services</span>
+                    <span class="sp-color2"><?= $titre_service ?></span>
                     <h2>We Provide a Wide Variety of IT Services</h2>
                 </div>
                 <div class="row pt-45">
@@ -250,7 +271,7 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="services-item">
                             <a href="service-details">
-                                <img src="<?php echo $img_service.$value->image ?>" alt="Images">
+                                <img src="<?php echo affichage_img( $img_service, $value->image ) ?>" alt="Images">
                             </a>
                             <div class="content">
                                 <i class="flaticon-consultant"></i>
@@ -270,7 +291,7 @@
         <!-- Services Area Three End -->
 
         <!-- Build Area -->
-        <div class="build-area pt-100 pb-70">
+        <?php /*<div class="build-area pt-100 pb-70">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-8 col-md-8">
@@ -297,7 +318,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> */?>
         <!-- Build Area End -->
 
         <!-- Case Study Area -->
@@ -578,21 +599,23 @@
                 </div>
 
                 <div class="row pt-45">
+
+                <?php foreach($obj_tous_post as $value): ?>
                     <div class="col-lg-4 col-md-6">
                         <div class="blog-card">
                             <div class="blog-img">
                                 <a href="blog-details">
-                                    <img src="assets/images/blog/blog-img1.jpg" alt="Blog Images">
+                                    <img src="<?= $image_banniere . $value->photo ?>" alt="Blog Images">
                                 </a>
                                 <div class="blog-tag">
-                                    <h3>11</h3>
-                                    <span>Dec</span>
+                                    <h3><?= data_date($value->date,2) ?></h3>
+                                    <span><?= data_date($value->date,1) ?></span>
                                 </div>
                             </div>
                             <div class="content">
                                 <ul>
                                     <li>
-                                        <a href="home"><i class='bx bxs-user'></i> By Admin</a>
+                                        <a href="home"><i class='bx bxs-user'></i> <?= info_admin($value->matricule_admin)->nom ?></a>
                                     </li>
                                     <li>
                                         <a href="home"><i class='bx bx-purchase-tag-alt'></i>Business</a>
@@ -600,14 +623,16 @@
                                 </ul>
 
                                 <h3>
-                                    <a href="blog-details">Product Idea Solution for New Generation</a>
+                                    <a href="blog-details"><?= $value->titre ?></a>
                                 </h3>
-                                <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum.</p>
+                                <p><?= strTextLent($value->titre , 100) ?></p>
                                 <a href="blog-details" class="read-btn">Read More <i class='bx bx-chevron-right'></i></a>
                             </div>
                         </div>
                     </div>
+                <?php endforeach;?>
 
+                    <?php /*
                     <div class="col-lg-4 col-md-6">
                         <div class="blog-card">
                             <div class="blog-img">
@@ -665,7 +690,8 @@
                                 <a href="blog-details" class="read-btn">Read More <i class='bx bx-chevron-right'></i></a>
                             </div>
                         </div>
-                    </div>
+                    </div> */?>
+
                 </div>
             </div>
         </div>

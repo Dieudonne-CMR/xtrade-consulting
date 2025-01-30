@@ -62,15 +62,21 @@
         </div>
     </div>
 </header>
+<style>
+    .logo-one ,.logo-two {
+        height: 5rem;
+        border-radius: 10px;
+    }
+</style>
 <!-- Top Header End -->
 
 <!-- Start Navbar Area -->
 <div class="navbar-area">
     <!-- Menu For Mobile Device -->
     <div class="mobile-nav">
-            <a href="index.html" class="logo">
-            <img src="assets/images/logos/logo-1.png" class="logo-one" alt="Logo">
-            <img src="assets/images/logos/logo-2.png" class="logo-two" alt="Logo">
+            <a href="home" class="logo">
+            <img src="<?= $lien_logo . $logo  ?>" class="logo-one" alt="Logo">
+            <img src="<?= $lien_logo . $logo  ?>" class="logo-two" alt="Logo">
         </a>
     </div>
 
@@ -79,9 +85,9 @@
         <div class="container-fluid">
             <div class="container-max">
                 <nav class="navbar navbar-expand-md navbar-light ">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logos/logo-1.png" class="logo-one" alt="Logo">
-                        <img src="assets/images/logos/logo-2.png" class="logo-two" alt="Logo">
+                    <a class="navbar-brand" href="home">
+                        <img src="<?= $lien_logo . $logo  ?>" class="logo-one" alt="Logo">
+                        <img src="<?= $lien_logo . $logo  ?>" class="logo-two" alt="Logo">
                     </a>
 
                     <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">

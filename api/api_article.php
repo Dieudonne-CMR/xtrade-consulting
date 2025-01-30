@@ -1,5 +1,5 @@
 <?php
-  $url_image="https://akila.blog/@ressouce/mg_etablissement/"; // lien des images des articles
+//   $url_image="https://akila.blog/@ressouce/mg_etablissement/"; // lien des images des articles
 // $matricule_entreprise="654b7262c7d05";
 
 //===== recuper les tous les articles =====
@@ -8,8 +8,7 @@ if(isset($_GET['mat_categori'])){
     recupProduitCategorie($mat_categori);
     $obj_tous_post= recupProduitCategorie($mat_categori);  // recuper les articles d'une d'une categories
 }else{
-    
-    $obj_tous_post= recup_article(); // recuper tous les les articles
+    $obj_tous_post = recup_article(); // recuper tous les les articles
 }
 // print_r( $obj_tous_post); 
 //==== fin de recuperation==========

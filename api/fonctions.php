@@ -21,7 +21,9 @@
     return $txt;
   }
 
-  function data_date($data){
+  // fonction pour afficher les date
+
+  function data_date($data,$num=NULL){
     $data = explode('-',$data);
     switch ($data[1]) {
         case '01':
@@ -65,7 +67,20 @@
         $moi='pas de mois';
             break;
     }
-    $data= $data[2].' '.$moi.', '.$data[0];
+    if($num===0):
+        $data= $data[0]; //annee
+    endif;
+    if($num===1):
+        $data= $moi; //mois
+    endif;
+    if($num===2):
+        $data= $data[2]; //jours
+    endif;
+    if($num===null):
+        $data= $data[2].' '.$moi.', '.$data[0]; //jours mois annee
+    endif;
+
+    return $data;
 
 }
 
