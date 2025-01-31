@@ -1,3 +1,54 @@
+<style type="text/css">
+        @-webkit-keyframes clignotes 
+                {
+                    0% { outline: 10px solid <?=$couleur1_entreprise ?>; }
+                    50% { outline: 2px solid <?=$couleur_entreprise2 ?>; }
+                    100% { outline: 10px solid <?=$couleur2_entreprise ?>; }
+                }
+                
+                #bouton_whatsapp{
+                    position: fixed;
+                    bottom: 5%;
+                    left: 20px;
+                    z-index:70;
+                }
+
+                
+                #bouton_whatsapp div{
+                width: 50px;
+                height: 50px;
+                background-color: black;
+                background-size: cover;
+                background-position: center;
+                border-radius: 50%;
+                animation: clignotes 1s infinite;
+                
+
+                /*-webkit-animation: clignote 1s infinite;  Safari 4.0 - 8.0 
+                    animation: clignote 1s infinite;*/
+                }
+
+                #bouton_whatsapp div img{
+                    width: 50px;
+                    height: 50px;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+                }
+    </style>
+  
+    <!-- <a id="bouton_whatsapp" href="https://wa.me/+237682465068"> -->
+    <?php $message = "Bonjour! Je viens de visiter votre site. J'aimerais plus d'information sur vos services!" ; ?>
+    
+    <?php if(!empty($whatsapp) and $bouton_whatsapp=='oui'): ?>
+        <a id="bouton_whatsapp" href="https://api.whatsapp.com/send/?phone=<?= $whatsapp ?>&text=<?php echo $message ?>">
+            <div><img src="https://cdn-icons-png.flaticon.com/128/3670/3670025.png"></div>
+        </a>
+    <?php endif; ?>  
+<!-- // fin du boutton whatsapp -->
+
 <!-- Footer Area End -->
 <footer class="footer-area footer-bg">
     <div class="container">
@@ -7,15 +58,15 @@
                     <div class="footer-widget">
                         <div class="footer-logo">
                             <a href="index.html">
-                                <img src="assets/images/logos/footer-logo.png" alt="Images">
+                                <img src="<?= $lien_logo . $logo  ?>" class="logo-one" alt="Images">
                             </a>
                         </div>
                         <p>
-                            Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auct.Aenean, lorem quis bibendum auct. Aenean sollicitudin lorem.
+                            <?=  $decription_entreprise ?>
                         </p>
                         <div class="footer-call-content">
-                            <h3>Talk to Our Support</h3>
-                            <span><a href="tel:10021234567">+1 002-123-4567</a></span>
+                            <h3>Parlez à notre service d'assistance</h3>
+                            <span><a href="tel:<?=  $telephone ?>"><?=  $telephone ?></a></span>
                             <i class='bx bx-headphone'></i>
                         </div>
                     </div>
@@ -49,17 +100,21 @@
                     <div class="footer-widget pl-5">
                         <h3>Nos Article</h3>
                             <ul class="footer-blog">
-                            <li>
-                                <a href="blog-details.html">
-                                    <img src="assets/images/blog/blog-img-footer.jpg" alt="Images">
-                                </a>
-                                <div class="content">
-                                    <h3><a href="blog-details.html">Product Idea Solution For New Generation</a></h3>
-                                    <span>04 Dec 2024</span>
-                                </div>
-                            </li>
+                            <?php foreach(recup_article() as $keys=> $value): ?>
+                                <?php if($keys<=2): ?>
+                                <li>
+                                    <a href="blog-details.html">
+                                        <img src="<?= $url_image . $value->photo ?>" alt="Images">
+                                    </a>
+                                    <div class="content">
+                                        <h3><a href="blog-details.html"><?=  strTextLent($value->titre,50) ?></a></h3>
+                                        <span><?= data_date($value->date) ?></span>
+                                    </div>
+                                </li>
+                                <?php else: break; endif; ?>
+                            <?php endforeach; ?>
 
-                            <li>
+                            <?php /*<li>
                                 <a href="blog-details.html">
                                     <img src="assets/images/blog/blog-img-footer2.jpg" alt="Images">
                                 </a>
@@ -77,7 +132,8 @@
                                     <h3><a href="blog-details.html">Business Strategy Make His Goal Acheive</a></h3>
                                     <span>10 Dec 2024</span>
                                 </div>
-                            </li>
+                            </li> */?>
+
                         </ul>
                     </div>
                 </div>
@@ -85,7 +141,7 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="footer-widget">
                         <h3>Newsletter</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum finibus molestie molestie. Phasellus ac rutrum massa, et volutpat nisl. Fusce ultrices suscipit nisl.</p>
+                        <p> notre mission est de vous accompagner dans la gestion efficace de votre comptabilité et fiscalité tout en vous apportant des solutions adaptées à vos besoins.</p>
                         <div class="newsletter-area">
                             <form class="newsletter-form" data-toggle="validator" method="POST">
                                 <input type="email" class="form-control" placeholder="Enter Your Email" name="EMAIL" required autocomplete="off">
@@ -103,8 +159,8 @@
         <div class="copy-right-area">
             <div class="copy-right-text">
                 <p>
-                    Copyright © <script>document.write(new Date().getFullYear())</script> Techex. All Rights Reserved by 
-                    <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a> 
+                    Copyright © <script>document.write(new Date().getFullYear())</script> Xtrade Consulting Goupe Sarl. Réaliser par  
+                    <a href="https://akilaweb.net" target="_blank">akila web</a> 
                 </p>
             </div>
         </div>

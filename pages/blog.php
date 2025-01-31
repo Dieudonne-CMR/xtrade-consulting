@@ -71,7 +71,7 @@
         <div class="inner-banner">
             <div class="container">
                 <div class="inner-title text-center">
-                    <h3>Nos Articles</h3>
+                    <h3><?= $titre_page_blog  ?></h3>
                     <ul>
                         <li>
                             <a href="home">Accueil</a>

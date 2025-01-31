@@ -19,11 +19,18 @@ if(@$url[0]=='home' || @$url[0]==''):
     // include ("api/api_services.php");
     $services = recup_services();
     $obj_tous_post = recup_article();
+    $formation=[];
+    foreach(info_offres() as $farmation):
+        if($farmation->publie==2):
+            $formation[]=$farmation;
+        endif;
+    endforeach;
+
     include('pages/home.php');
 endif;
 
 if(@$url[0]=='about'):
-
+    $services = recup_services();
     include('pages/about.php');
 endif;
 //-----------------------------

@@ -100,6 +100,7 @@ stdClass Object
     [mention_titre3] => Total gagné
     [mention4] => 15
     [mention_titre4] => Prix remportés
+
     [motivation_titre] => 	Raisons de choisir Camerounaise des services
     [motivation_desription] => 
     [motivation_img] => 
@@ -107,8 +108,17 @@ stdClass Object
     [offre_descripr] => 'Décidez de vos objectifs et nous vous aidons à les atteindre pas à pas, sans vous exténuer mais en agissant de façon pérenne, grâce à un projet de partenariat de développement commercial de vos activités.
     [offre_img] => 
 )
+    [motivation_titre] => Raisons de choisir Camerounaise des services
+    [motivation_desription] => 
+    [motivation_img] => 
+
+    [offre_titre] => Remplir ce formulaire
+    [offre_descripr] => Décidez de vos objectifs et nous vous aidons à les atteindre pas à pas, sans vous exténuer mais en agissant de façon pérenne, grâce à un projet de partenariat de développement commercial de vos activités. je sais
+    [offre_img] => 
+)
 
 
+    
 
 
 */

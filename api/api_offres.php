@@ -4,7 +4,7 @@
 
 // $matricule_entreprise="654b7262c7d05";
 //===== les vues sur un articles===== 
-$offres = info_offres();
+// $offres = info_offres();
 // print_r($offres);
 //==== fin de recuperation==========
 

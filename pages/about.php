@@ -71,7 +71,7 @@
         <div class="inner-banner">
             <div class="container">
                 <div class="inner-title text-center">
-                    <h3>A Propos de Nous</h3>
+                    <h3>A Propos de Nous !</h3>
                     <ul>
                         <li>
                             <a href="home">Accueil</a>
@@ -95,27 +95,28 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6">
                         <div class="about-play">
-                            <img src="assets/images/about/about-img1.jpg" alt="About Images">
-                            <div class="about-play-content">
+                            <img src="<?= affichage_img( $image_banniere , $image_about)  ?>" alt="About Images">
+                            <?php /*<div class="about-play-content">
                                 <span>Watch Our Intro Video</span>
                                 <h2>Perfect Solution for It Services!</h2>
                                 <div class="play-on-area">
                                     <a href="https://www.youtube.com/watch?v=tUP5S4YdEJo" class="play-on popup-btn"><i class='bx bx-play'></i></a>
-                                </div>
-                            </div>
+                                </div> 
+                            </div> */?>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
                         <div class="about-content ml-25">
                             <div class="section-title">
-                                <span class="sp-color2">15 Years of Experience</span>
-                                <h2>Right Partner for Software Innovation</h2>
+                                <span class="sp-color2">Apropos de nous !</span>
+                                <?php /*<h2>Right Partner for Software Innovation</h2>
                                 <p>
                                     Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet.
-                                </p>
+                                </p> */?>
+                                 <?= $apropos_de_lentreprise ?>
                             </div>
-                            <div class="row">
+                            <?php /*<div class="row">
                                 <div class="col-lg-6 col-md-6">
                                     <ul class="about-list text-start">
                                         <li><i class='bx bxs-check-circle'></i>Cost of Supplies and Equipment</li>
@@ -132,7 +133,7 @@
                                     </ul>
                                 </div>
                             </div>
-                            <p class="about-content-text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                            <p class="about-content-text">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p> */?>
                         </div>
                     </div>
                 </div>
@@ -147,13 +148,13 @@
                     <div class="col-lg-6">
                         <div class="choose-content mr-20">
                             <div class="section-title">
-                                <span class="sp-color1">Why Choose Us</span>
-                                <h2>We Provide Truly Prominent It Solutions.</h2>
+                                <span class="sp-color1">Pourquoi choisir ?</span>
+                                <h2><?= $motivation_titre ?>.</h2>
                                 <p>
-                                    Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum auctor a ornare odio. 
+                                <?= $motivation_desription ?>
                                 </p>
                             </div>
-                            <div class="row">
+                            <?php /*<div class="row">
                                 <div class="col-lg-6 col-6">
                                     <div class="choose-content-card">
                                         <div class="content">
@@ -173,13 +174,13 @@
                                         <p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</p>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */?>
                         </div>
                     </div>
 
                     <div class="col-lg-6">
                         <div class="choose-img">
-                            <img src="assets/images/choose-img.jpg" alt="Images">
+                            <img src="<?= $motivation_img ?>" alt="Images">
                         </div>
                     </div>
                 </div>
@@ -191,35 +192,37 @@
         <div class="security-area pt-100 pb-70">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="sp-color2">IT Security & Computing</span>
-                    <h2>Searching for a Solution! We Provide Truly Prominent IT Solutions</h2>
+                    <span class="sp-color2">Ameliorer vos competances</span>
+                    <h2><?= $titre_s ?></h2>
                 </div>
+
                 <div class="row pt-45">
+
                     <div class="col-lg-4 col-sm-6">
                         <div class="security-card">
                             <i class="flaticon-cyber-security"></i>
-                            <h3><a href="case-details.html">Business Security</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.</p>
+                            <h3><a href="javascript:void(0)"><?= $titre_s1 ?></a></h3>
+                            <p><?= $discription_s1 ?></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="security-card">
+                            <i class="flaticon-computer"></i>
+                            <h3><a href="javascript:void(0)"><?= $titre_s2 ?></a></h3>
+                            <p><?= $description_s2 ?></p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-sm-6">
                         <div class="security-card">
                             <i class="flaticon-computer"></i>
-                            <h3><a href="case-details.html">Manage IT Service</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.</p>
+                            <h3><a href="javascript:void(0)"><?= $titre_s3 ?></a></h3>
+                            <p><?= $description_s3 ?></p>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="security-card">
-                            <i class="flaticon-effective"></i>
-                            <h3><a href="case-details.html">Product Analysis</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6">
+                    <?php /*<div class="col-lg-4 col-sm-6">
                         <div class="security-card">
                             <i class="flaticon-implement"></i>
                             <h3><a href="case-details.html">Analytic Solution</a></h3>
@@ -241,20 +244,25 @@
                             <h3><a href="case-details.html">Risk Management</a></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.</p>
                         </div>
-                    </div>
+                    </div> */?>
+
                 </div>
             </div>
         </div>
         <!-- Security Area End -->
 
         <!-- Brand Area -->
+        <?php if(!empty($partenaire)): ?>
         <div class="brand-area-two ptb-100">
             <div class="container">
                 <div class="brand-slider owl-carousel owl-theme">
-                    <div class="brand-item">
-                        <img src="assets/images/brand-logo/brand-style1.png" alt="Images">
-                    </div>
-                    <div class="brand-item">
+                    <?php foreach($partenaire as $value): ?>
+                        <div class="brand-item">
+                            <img src="<?= $logo_partenaire . $value->logo?>" alt="Images">
+                        </div>
+                    <?php endforeach; ?>
+
+                    <?php /*<div class="brand-item">
                         <img src="assets/images/brand-logo/brand-style2.png" alt="Images">
                     </div>
                     <div class="brand-item">
@@ -268,50 +276,52 @@
                     </div>
                     <div class="brand-item">
                         <img src="assets/images/brand-logo/brand-style3.png" alt="Images">
-                    </div>
+                    </div> */?>
+
                 </div>
             </div>
         </div>
+        <?php endif; ?>
         <!-- Brand Area End -->
 
         <!-- Counter Area -->
         <div class="counter-area pt-100 pb-70">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="sp-color2">Numbers Are Talking</span>
-                    <h2>Let’s Check Our Business Growth and Success Story</h2>
-                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris Morbi accumsan ipsum velit. </p>
+                    <span class="sp-color2">Les chiffres parlent</span>
+                    <h2>Vérifions la croissance et la réussite de notre entreprise</h2>
+                    <p>La croissance et la réussite de votre entreprise dépendent de stratégies bien pensées et d’une gestion efficace. nous vous aidons à structurer vos finances, optimiser votre fiscalité et renforcer vos compétences pour un développement durable. Ensemble, analysons vos performances et saisissons de nouvelles opportunités pour propulser votre activité vers le succès </p>
                 </div>
                 <div class="row pt-45">
                     <div class="col-lg-3 col-6 col-md-3">
                         <div class="counter-another-content">
                             <i class="flaticon-web-development"></i>
-                            <h3>4205+</h3>
-                            <span>Delivered Goods</span>
+                            <h3><?= $mention1?></h3>
+                            <span><?= $mention_titre1 ?></span>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-6 col-md-3">
                         <div class="counter-another-content">
                             <i class="flaticon-consulting-1"></i>
-                            <h3>245+</h3>
-                            <span>IT Consulting</span>
+                            <h3><?= $mention2?></h3>
+                            <span><?= $mention_titre2 ?></span>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-6 col-md-3">
                         <div class="counter-another-content">
                             <i class="flaticon-startup"></i>
-                            <h3>3550+</h3>
-                            <span>Fully Launched</span>
+                            <h3><?= $mention3?></h3>
+                            <span><?= $mention_titre3 ?></span>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-6 col-md-3">
                         <div class="counter-another-content">
                             <i class="flaticon-tick"></i>
-                            <h3>6545+</h3>
-                            <span>Project Completed</span>
+                            <h3><?= $mention4?></h3>
+                            <span><?= $mention_titre4 ?></span>
                         </div>
                     </div>
                 </div>

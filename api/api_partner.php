@@ -4,7 +4,7 @@
 
 // $matricule_entreprise="654b7262c7d05";
 //===== les vues sur un articles===== 
-// $partenaire = info_partenaire();
+$partenaire = info_partenaire();
 //==== fin de recuperation==========
 
 //====================fonction qui recuper les partenaire de l'entreprise ====================

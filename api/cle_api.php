@@ -25,9 +25,11 @@ include ("api/api_info_entreprise.php");
 include ("api/fonctions.php");
 include ("api/api_info_admin.php");
 include ("api/api_article.php");
+include ("api/api_offres.php");
 
 
 //=====informations du fichier api_header.php o
+// print_r($dataEntreprise);
 $nom_entreprise = $info_header-> nom_entreprise;
 $logo         =       @$info_header->logo;
 //----------Menue
@@ -35,6 +37,8 @@ $page1_menu1  =       @$info_header->page1;
 $page_nemu2   =       @$info_header->page2;
 $page_nemu3   =       @$info_header->page4;
 $whatsapp     =       @$info_header->whatsapp;
+
+$bouton_whatsapp=@$info_header->bouton_whatsapp;
 //------------contact
 $region        =       @$info_header->region;
 $quartier     =       @$info_header->quartier;
@@ -82,5 +86,17 @@ $description_baniere3=  @$dataEntreprise->d_baniere3;
 //--------------- Apropos
 $apropos_de_lentreprise=    @$dataEntreprise->propos;
 $image_about =          @$dataEntreprise->banniere_site1;
+//---------------------- autre services  
+$titre_s= @$dataEntreprise->titre_s;
+$titre_s1= @$dataEntreprise->titre_s1;
+$discription_s1= @$dataEntreprise->discription_s1;
+$titre_s2= @$dataEntreprise->titre_s2;
+$description_s2= @$dataEntreprise->description_s2;
+$titre_s3= @$dataEntreprise->titre_s3;
+$description_s3= @$dataEntreprise->description_s3;
+//-----------Motivation
+$motivation_titre=@$dataEntreprise->motivation_titre;
+$motivation_desription=@$dataEntreprise->motivation_desription;
+$motivation_img=@$dataEntreprise->motivation_img;
 
 ?>

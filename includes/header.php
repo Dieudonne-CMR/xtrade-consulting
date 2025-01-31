@@ -16,7 +16,7 @@
                 <div class="col-lg-7 col-md-6">
                     <div class="top-head-left">
                         <div class="top-contact">
-                            <h3>Support By : <a href="tel:12122555511">+1 (212) 255-5511</a></h3>
+                            <h3>Soutien par : <a href="tel:<?= $telephone ?>"><?=  $telephone ?></a></h3>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="language-list">
+                        <?php /*<div class="language-list">
                             <select class="language-list-item">
                                 <option>English</option>
                                 <option>العربيّة</option>
@@ -55,7 +55,7 @@
                                 <option>Português</option>
                                 <option>简体中文</option>
                             </select>	
-                        </div>
+                        </div> */?>
                     </div>
                 </div>
             </div>

@@ -96,7 +96,7 @@ endif;
                             <div class="banner-content">
                                 <h1><?= $titre_banniere ?></h1>
                                 <p>
-                                    <?php $description_baniere ?>
+                                    <?= $description_baniere ?>
                                 </p>
                                 <div class="banner-btn">
                                     <a href="about" class="default-btn btn-bg-two border-radius-50">Lire plus <i class='bx bx-chevron-right'></i></a>
@@ -201,35 +201,37 @@ endif;
         <div class="security-area pt-100 pb-70">
             <div class="container">
                 <div class="section-title text-center">
-                    <span class="sp-color2">IT Security & Computing</span>
-                    <h2>Searching for a Solution! We Provide Truly Prominent IT Solutions</h2>
+                    <span class="sp-color2">Ameliorer vos competances</span>
+                    <h2><?= $titre_s ?></h2>
                 </div>
+
                 <div class="row pt-45">
+
                     <div class="col-lg-4 col-sm-6">
                         <div class="security-card">
                             <i class="flaticon-cyber-security"></i>
-                            <h3><a href="case-details.html">Business Security</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.</p>
+                            <h3><a href="javascript:void(0)"><?= $titre_s1 ?></a></h3>
+                            <p><?= $discription_s1 ?></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="security-card">
+                            <i class="flaticon-computer"></i>
+                            <h3><a href="javascript:void(0)"><?= $titre_s2 ?></a></h3>
+                            <p><?= $description_s2 ?></p>
                         </div>
                     </div>
 
                     <div class="col-lg-4 col-sm-6">
                         <div class="security-card">
                             <i class="flaticon-computer"></i>
-                            <h3><a href="case-details.html">Manage IT Service</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.</p>
+                            <h3><a href="javascript:void(0)"><?= $titre_s3 ?></a></h3>
+                            <p><?= $description_s3 ?></p>
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6">
-                        <div class="security-card">
-                            <i class="flaticon-effective"></i>
-                            <h3><a href="case-details.html">Product Analysis</a></h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-sm-6">
+                    <?php /*<div class="col-lg-4 col-sm-6">
                         <div class="security-card">
                             <i class="flaticon-implement"></i>
                             <h3><a href="case-details.html">Analytic Solution</a></h3>
@@ -251,7 +253,8 @@ endif;
                             <h3><a href="case-details.html">Risk Management</a></h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit scelerisque ullamcorper proin scelerisque tortor odio.</p>
                         </div>
-                    </div>
+                    </div> */?>
+
                 </div>
             </div>
         </div>
@@ -262,7 +265,7 @@ endif;
             <div class="container">
                 <div class="section-title text-center">
                     <span class="sp-color2"><?= $titre_service ?></span>
-                    <h2>We Provide a Wide Variety of IT Services</h2>
+                    <h2><?= $titre_service ?></h2>
                 </div>
                 <div class="row pt-45">
                     <?php 
@@ -321,110 +324,13 @@ endif;
         </div> */?>
         <!-- Build Area End -->
 
-        <!-- Case Study Area -->
-        <div class="case-study-area pb-70">
-            <div class="container-fluid p-0">
-                <div class="section-title text-center">
-                    <span class="sp-color2">Formation</span>
-                    <h2>Introduce Our Projects and Check Recent Work </h2>
-                </div>
-
-                <div class="case-study-slider owl-carousel owl-theme pt-45">
-                    <div class="case-study-item">
-                        <a href="case-details.html">
-                            <img src="assets/images/case-study/case-study1.jpg" alt="Images">
-                        </a>
-                        <div class="content">
-                            <h3><a href="case-details.html">Business Solution</a></h3>
-                            <ul>
-                                <li><a href="case-details.html">Business</a></li>
-                                <li><a href="case-details.html">Planing</a> </li>
-                            </ul>
-                            <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="case-study-item">
-                        <a href="case-details.html">
-                            <img src="assets/images/case-study/case-study2.jpg" alt="Images">
-                        </a>
-                        <div class="content">
-                            <h3><a href="case-details.html">Business Solution</a></h3>
-                            <ul>
-                                <li><a href="case-details.html">Business</a></li>
-                                <li><a href="case-details.html">Planing</a> </li>
-                            </ul>
-                            <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="case-study-item">
-                        <a href="case-details.html">
-                            <img src="assets/images/case-study/case-study3.jpg" alt="Images">
-                        </a>
-                        <div class="content">
-                            <h3><a href="case-details.html">Business Solution</a></h3>
-                            <ul>
-                                <li><a href="case-details.html">Business</a></li>
-                                <li><a href="case-details.html">Planing</a> </li>
-                            </ul>
-                            <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="case-study-item">
-                        <a href="case-details.html">
-                            <img src="assets/images/case-study/case-study4.jpg" alt="Images">
-                        </a>
-                        <div class="content">
-                            <h3><a href="case-details.html">UI/UX Research</a></h3>
-                            <ul>
-                                <li><a href="case-details.html">UI/UX Design</a></li>
-                                <li><a href="case-details.html">Research</a> </li>
-                            </ul>
-                            <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="case-study-item">
-                        <a href="case-details.html">
-                            <img src="assets/images/case-study/case-study6.jpg" alt="Images">
-                        </a>
-                        <div class="content">
-                            <h3><a href="case-details.html">Business Solution</a></h3>
-                            <ul>
-                                <li><a href="case-details.html">Solution</a></li>
-                                <li><a href="case-details.html">Business</a> </li>
-                            </ul>
-                            <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-
-                    <div class="case-study-item">
-                        <a href="case-details.html">
-                            <img src="assets/images/case-study/case-study2.jpg" alt="Images">
-                        </a>
-                        <div class="content">
-                            <h3><a href="case-details.html">Web Development</a></h3>
-                            <ul>
-                                <li><a href="case-details.html">Design</a></li>
-                                <li><a href="case-details.html">Development</a> </li>
-                            </ul>
-                            <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Case Study Area End -->
-
-        <!-- Talk Area -->
-        <div class="talk-area ptb-100">
+          <!-- Talk Area -->
+          <div class="talk-area ptb-100">
             <div class="container">
                 <div class="talk-content text-center">
                     <div class="section-title text-center">
-                        <span class="sp-color1">Let's Talk</span>
-                        <h2>We Are Adding Kinds of It Services That You Grow Success</h2>
+                        <span class="sp-color1">Parlons-en</span>
+                        <h2>Chaque entreprise mérite un accompagnement de qualité.</h2>
                     </div>
                     <a href="contact" class="default-btn btn-bg-two border-radius-5">Nous Contact</a>
                 </div>
@@ -432,8 +338,110 @@ endif;
         </div>
         <!-- Talk Area End -->
 
+        <!-- Case Study Area -->
+        <div class="case-study-area pb-70" style="margin-top: 3rem;">
+            <div class="container-fluid p-0">
+                <div class="section-title text-center">
+                    <span class="sp-color2">Formations</span>
+                    <h2>Les formations que nous offrons</h2>
+                </div>
+
+                <div class="case-study-slider owl-carousel owl-theme pt-45">
+                    <?php foreach($formation as $value): ?>
+                        <div class="case-study-item">
+                            <a href="case-details.html">
+                                <img src="<?= $Lien_image_offres . $value->img_banniere ?>" alt="Images">
+                            </a>
+                            <div class="content">
+                                <h3><a href="case-details.html"><?= $value->titre ?></a></h3>
+                                <?php /*<ul>
+                                    <li><a href="case-details.html">Business</a></li>
+                                    <li><a href="case-details.html">Planing</a> </li>
+                                </ul> */?>
+                                <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+
+                   <?php /*
+                        <div class="case-study-item">
+                            <a href="case-details.html">
+                                <img src="assets/images/case-study/case-study2.jpg" alt="Images">
+                            </a>
+                            <div class="content">
+                                <h3><a href="case-details.html">Business Solution</a></h3>
+                                <ul>
+                                    <li><a href="case-details.html">Business</a></li>
+                                    <li><a href="case-details.html">Planing</a> </li>
+                                </ul>
+                                <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+
+                        <div class="case-study-item">
+                            <a href="case-details.html">
+                                <img src="assets/images/case-study/case-study3.jpg" alt="Images">
+                            </a>
+                            <div class="content">
+                                <h3><a href="case-details.html">Business Solution</a></h3>
+                                <ul>
+                                    <li><a href="case-details.html">Business</a></li>
+                                    <li><a href="case-details.html">Planing</a> </li>
+                                </ul>
+                                <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+
+                        <div class="case-study-item">
+                            <a href="case-details.html">
+                                <img src="assets/images/case-study/case-study4.jpg" alt="Images">
+                            </a>
+                            <div class="content">
+                                <h3><a href="case-details.html">UI/UX Research</a></h3>
+                                <ul>
+                                    <li><a href="case-details.html">UI/UX Design</a></li>
+                                    <li><a href="case-details.html">Research</a> </li>
+                                </ul>
+                                <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+
+                        <div class="case-study-item">
+                            <a href="case-details.html">
+                                <img src="assets/images/case-study/case-study6.jpg" alt="Images">
+                            </a>
+                            <div class="content">
+                                <h3><a href="case-details.html">Business Solution</a></h3>
+                                <ul>
+                                    <li><a href="case-details.html">Solution</a></li>
+                                    <li><a href="case-details.html">Business</a> </li>
+                                </ul>
+                                <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div>
+
+                        <div class="case-study-item">
+                            <a href="case-details.html">
+                                <img src="assets/images/case-study/case-study2.jpg" alt="Images">
+                            </a>
+                            <div class="content">
+                                <h3><a href="case-details.html">Web Development</a></h3>
+                                <ul>
+                                    <li><a href="case-details.html">Design</a></li>
+                                    <li><a href="case-details.html">Development</a> </li>
+                                </ul>
+                                <a href="case-details.html" class="more-btn"><i class='bx bx-right-arrow-alt'></i></a>
+                            </div>
+                        </div> 
+                    */?>
+                </div>
+            </div>
+        </div>
+        <!-- Case Study Area End -->
+
+
         <!-- Technology Area Two -->
-        <section class="technology-area-two pt-100 pb-70">
+        <?php /*<section class="technology-area-two pt-100 pb-70">
             <div class="container">
                 <div class="section-title text-center">
                     <span class="sp-color2">Technology Index</span>
@@ -484,17 +492,21 @@ endif;
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */?>
         <!-- Technology Area Two End -->
 
         <!-- Brand Area -->
+         <?php if(!empty($partenaire)): ?>
         <div class="brand-area-two ptb-100">
             <div class="container">
                 <div class="brand-slider owl-carousel owl-theme">
-                    <div class="brand-item">
-                        <img src="assets/images/brand-logo/brand-style1.png" alt="Images">
-                    </div>
-                    <div class="brand-item">
+                    <?php foreach($partenaire as $value): ?>
+                        <div class="brand-item">
+                            <img src="<?= $logo_partenaire . $value->logo?>" alt="Images">
+                        </div>
+                    <?php endforeach; ?>
+
+                    <?php /*<div class="brand-item">
                         <img src="assets/images/brand-logo/brand-style2.png" alt="Images">
                     </div>
                     <div class="brand-item">
@@ -508,10 +520,12 @@ endif;
                     </div>
                     <div class="brand-item">
                         <img src="assets/images/brand-logo/brand-style3.png" alt="Images">
-                    </div>
+                    </div> */?>
+
                 </div>
             </div>
         </div>
+        <?php endif; ?>
         <!-- Brand Area End -->
 
         <!-- Clients Area -->
@@ -519,46 +533,43 @@ endif;
             <div class="container">
                 <div class="section-title text-center">
                     <span class="sp-color2">Nos Clients</span>
-                    <h2>Feedback des Clients</h2>
+                    <h2>Rétroaction du client et etudiants</h2>
                 </div>
 
                 <div class="clients-slider owl-carousel owl-theme pt-45">
                     <div class="clients-content">
                         <div class="content">
-                            <img src="assets/images/clients-img/clients-img1.jpg" alt="Images">
+                            <img src="https://cdn-icons-png.flaticon.com/128/16683/16683419.png" alt="Images">
                             <i class='bx bxs-quote-alt-left'></i>
-                            <h3>Jonthon Martin</h3>
-                            <span>App Developer</span>
+                            <h3>Marc T.</h3>
+                            <span>Entrepreneur</span>
                         </div>
                         <p>
-                            “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-                            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit.”
+                            “Grâce à Xtrade Consulting Groupe Sarl, j’ai pu structurer ma comptabilité et optimiser ma gestion fiscale. Leur équipe m’a guidé à chaque étape, et aujourd’hui, je gère mon entreprise avec plus de sérénité. Un partenaire indispensable pour toute entreprise !”
                         </p>
                     </div>
 
                     <div class="clients-content">
                         <div class="content">
-                            <img src="assets/images/clients-img/clients-img2.jpg" alt="Images">
+                            <img src="https://cdn-icons-png.flaticon.com/128/16683/16683419.png" alt="Images">
                             <i class='bx bxs-quote-alt-left'></i>
-                            <h3>Alin Decros</h3>
-                            <span>Graphic Designer</span>
+                            <h3>Sandrine B.</h3>
+                            <span>Gérante de PME</span>
                         </div>
                         <p>
-                            “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-                            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit.”
+                            “J’ai suivi une formation en fiscalité avec Xtrade Consulting, et cela a complètement changé ma façon de gérer mon entreprise. J’ai appris à mieux comprendre les déclarations fiscales et à éviter les erreurs coûteuses. Une formation claire, pratique et enrichissante !”
                         </p>
                     </div>
 
                     <div class="clients-content">
                         <div class="content">
-                            <img src="assets/images/clients-img/clients-img3.jpg" alt="Images">
+                            <img src="https://cdn-icons-png.flaticon.com/128/16683/16683419.png" alt="Images">
                             <i class='bx bxs-quote-alt-left'></i>
-                            <h3>Elen Musk</h3>
-                            <span>Web Developer</span>
+                            <h3>Jean-Luc M.</h3>
+                            <span>Comptable indépendant</span>
                         </div>
                         <p>
-                            “Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis.
-                            sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi loren accumsan ipsum velit.”
+                            “Les conseils et l’accompagnement de Xtrade Consulting m’ont permis d’améliorer mes compétences et d’offrir un meilleur service à mes clients. Leur expertise est un vrai atout pour tous ceux qui veulent exceller en comptabilité et fiscalité.”
                         </p>
                     </div>
                 </div>
@@ -595,7 +606,7 @@ endif;
             <div class="container">
                 <div class="section-title text-center">
                     <span class="sp-color2">Articles Recent</span>
-                    <h2>Let’s Check Some Latest Blog</h2>
+                    <h2>Nos derniers articles</h2>
                 </div>
 
                 <div class="row pt-45">
@@ -605,7 +616,7 @@ endif;
                         <div class="blog-card">
                             <div class="blog-img">
                                 <a href="blog-details">
-                                    <img src="<?= $image_banniere . $value->photo ?>" alt="Blog Images">
+                                    <img src="<?= $url_image . $value->photo ?>" alt="Blog Images">
                                 </a>
                                 <div class="blog-tag">
                                     <h3><?= data_date($value->date,2) ?></h3>
@@ -625,7 +636,7 @@ endif;
                                 <h3>
                                     <a href="blog-details"><?= $value->titre ?></a>
                                 </h3>
-                                <p><?= strTextLent($value->titre , 100) ?></p>
+                                <p><?= strTextLent($value->content , 75) ?></p>
                                 <a href="blog-details" class="read-btn">Read More <i class='bx bx-chevron-right'></i></a>
                             </div>
                         </div>
